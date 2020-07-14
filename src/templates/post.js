@@ -34,9 +34,9 @@ export default ({
   <Layout>
     <SEO title={`${title} | Blog`} />
     <p>
-      <Link to={"/blog/"}>&lt; Back to all posts</Link>
+      <Link to={"/blog/"}> Back to all posts</Link>
     </p>
-    {image && <Imgalt={title}fixed={image.childImageSharp.fixed}/> }
+    {image && <Img alt={title}fixed={image.childImageSharp.fixed}/> }
 
     <h1>{title}</h1>
     <MDXRenderer>{body}</MDXRenderer>
